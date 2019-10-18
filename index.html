@@ -17,16 +17,16 @@
         <div class="background">
             <img src="images/background1.jpg">
         </div>
-            <a href="#user"><img class="circle" src="images/placeholder8.jpg"></a>
-            <a href="#name"><span class="white-text name">Isimemen Inegbedion</span></a>
-            <a href="#email"><span class="white-text email">isimemeni@gmail.com</span></a>
+            <img class="circle" src="images/placeholder8.jpg">
+            <span class="white-text name">Isimemen Inegbedion</span>
+            <span class="white-text email">isimemeni@gmail.com</span>
         </div></li>
     <li><a href="https://github.com/illimitableissi">GitHub</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">Linkedin</a></li>
     <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="isimemeninegbedion"><a class="LI-simple-link" href='https://www.linkedin.com/in/isimemeninegbedion?trk=profile-badge'>Isimemen Inegbedion</a></div>
 </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger blue-grey darken-4 btn"><i class="material-icons">Contact Me</i></a>
+<a href="#" data-target="slide-out" class="sidenav-trigger blue-grey darken-4 btn">Contact Me</a>
 
     
 <div class="parallax-container valign-wrapper">
@@ -62,7 +62,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h1 class="header col s12 center">Portfolio/Projects</h1>
+                <h1 class="header col s12 light center">Portfolio/Projects</h1>
             </div>
         </div>
     </div>
@@ -72,7 +72,7 @@
 <div class="container">
      <div class="row">
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder1.jpg">
                     <span class="card-title">Psychic Game</span>
@@ -84,7 +84,7 @@
             </div>
         </div>
           <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder2.jpg">
                     <span class="card-title">Crystal Collector</span>
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder3.jpg">
                     <span class="card-title">Trivia Game</span>
@@ -110,7 +110,7 @@
     </div>
     <div class="row">
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder4.jpg">
                     <span class="card-title">Giftastic</span>
@@ -122,7 +122,7 @@
             </div>
         </div>
           <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder6.jpg">
                     <span class="card-title">Train Scheduler</span>
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img src="images/placeholder7.jpg">
                     <span class="card-title">TraveLite</span>
@@ -152,11 +152,42 @@
     <div class="section no-pad-bot">
          <div class="container">
             <div class="row center">
-              <h5 class="header col s12 light"></h5>             
+              <h1 id="info-check" class="header col s12 light center">Before you go, leave your contact Information!</h1>             
             </div>
           </div>
         </div>
     <div class="parallax"><img src="images/landscape3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <form class="col s12 form-info">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                    <label for="textarea">Comment</label>
+                </div>
+          </div>
+        </form>
+        <button id="submit-button" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+      </div>
 </div>
 
 <footer class="page-footer grey lighten-1">
@@ -167,6 +198,8 @@
     </div>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
